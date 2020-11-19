@@ -1,17 +1,55 @@
+/** {
+    margin: 0;
+    padding: 0;
+  }*/
+
+/* ЛОКАЛЬНОЕ ПОДКЛЮЧЕНИЕ ШРИФТОВ */
+/* @import '../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf' */
+
+/*
+* - УНИВЕРСАЛЬНЫЙ СЕЛЕКТОР
+*/
+
+/* СЕЛЕКТОР ТЕГА */
+/* body {
+  background-color: black;
+  color: wheat;
+} */
+
+/* СЕЛЕКТОР КЛАССА */
+/* .full-document {
+  font-size: 30px;
+} */
+
+/* СЕЛЕКТОР ИДЕНТИФИКАТОРА */
+/* #header {
+  background: wheat;
+  color: black;
+} */
+/* СЕЛЕКТОР ПОТОМКА */
+/* .main-nav img {
+  border: 10px solid green;
+  width: 200px;
+} */
+
+/* СЕЛЕКТОР РЕБЕНКА */
+/* .main-nav > a {
+  border: 2px solid rgb(1, 8, 1);
+} */
+
+/* СЕЛЕКТОР АТРИБУТА */
+
+/* a[href="./index.html"]{
+  color: rgb(59, 177, 59);
+} */
+
+
 header {
     background-color:white;
     border: 1px;
 }
 
-.main-banner {
-    background-color: #2F303A;
-}
-
-.main-nav a:hover {
-    color: #2196F3;
-}
-
-.main-nav {
+header a {
     color: #212121;
     font-family: Roboto;
     font-style: normal;
@@ -19,11 +57,28 @@ header {
     font-size: 14px;
 }
 
+.email-phone {
+    color: #757575;
+}
+
+.header a:hover, 
+.header a:focus {
+    color: #2196F3;
+}
+
 body {
+    background: #FFFFFF;
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
-    color: #757575;
+}
+
+ul {
+    list-style: none;
+}
+
+.main-banner {
+    background-color: #2F303A;
+    text-align: center;
 }
 
 h1 {
@@ -60,6 +115,7 @@ h3 {    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
+    text-align: center;
     color: #757575;
 }
 .our-team {
@@ -92,7 +148,7 @@ h3 {    font-family: Roboto;
     font-family: Roboto;
     color: #FFFFFF;
     text-align: center;
-     font-style: normal;
+    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 30px
@@ -116,7 +172,8 @@ h3 {    font-family: Roboto;
     border-radius: 3px; /* Скругляем уголки */
     }
 
-.projects-navigation a:hover {
+.projects-navigation a:hover, 
+.projects-navigation a:focus {
     color: white;
     background-color: #2196F3;
 }
@@ -127,6 +184,7 @@ h3 {    font-family: Roboto;
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
+    text-align: center;
     color: #757575;
 }
 
@@ -141,11 +199,19 @@ h3 {    font-family: Roboto;
 
 footer {
     background-color: #2F303A;
+    color: #FFFFFF;
+    letter-spacing: 0.03em;
     border: 1px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+footer .email-phone {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 address {
-font-family: Roboto;
-font-size: 14px;
-color: #FFFFFF;
-}    
+font-style: normal;
+}   
