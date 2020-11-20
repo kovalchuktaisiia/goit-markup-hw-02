@@ -212,26 +212,6 @@ h3 {
     text-align: center;
 }
 
-/*через ссылки*/
-
-.filter-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    background-color: #F5F4FA;
-    text-decoration: none;
-}
-
-.filter-name:focus,
-.filter-name:hover {
-    color: var(--white-background);
-    background: var(--accent-link-color);
-    font-style: normal;
-    text-align: center;
-}
 
 .projects {
     font-weight: normal;
