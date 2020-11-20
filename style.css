@@ -65,23 +65,28 @@ text color имейл-телефон color: rgba(255, 255, 255, 0.6);
 :root {
     --accent-link-color: #2196F3;
     --h2-color: #212121; 
-    --p-color: #757575;
+    --main-text-color: #757575;
+    --button-background: #F5F4FA;
+    --white-background: #FFFFFF;
+    --text-style: Roboto;
 }
 
 header {
-    background-color:white;
+    background-color: var(--white-background);
     border: 1px;
 }
 
 header a {
     color: #212121;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;    
+}
+
+.current {
+    color: var(--accent-link-color);
 }
 
 .email-phone {
@@ -99,10 +104,10 @@ header a {
 }
 
 body {
-    background: #FFFFFF;
-    font-family: Roboto;
+    background: var(--white-background);
+    font-family: var(--text-style);
     font-style: normal;
-    color: var(--p-color);
+    color: var(--main-text-color);
 }
 
 ul {
@@ -117,12 +122,11 @@ ul {
 .to-order {
     display: inline-block; /* Строчно-блочный элемент */
     background: var(--accent-link-color); /* цвет фона */
-    color: #fff; /*  цвет текста */
     padding: 1rem 1.5rem; /* Поля вокруг текста */
     text-decoration: none; /* Убираем подчёркивание */
     border-radius: 3px; /* Скругляем уголки */
-    font-family: Roboto;
-    color: #FFFFFF;
+    font-family: var(--text-style);
+    color: var(--white-background);
     text-align: center;
     font-style: normal;
     font-weight: bold;
@@ -156,7 +160,7 @@ h3 {
     line-height: 24px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--p-color);
+    color: var(--main-text-color);
 }
 
 .features-list {    
@@ -187,6 +191,29 @@ h3 {
     background-color: #FFFFFF;
 }
 
+/* через баттон*/
+
+.button {
+    background-color: var(--button-background);
+    color: var(--h2-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.button:focus,
+.button:hover {
+    color: #ffffff;
+    background: var(--accent-link-color);
+    font-style: normal;
+    text-align: center;
+}
+
+/*через ссылки*/
+
 .filter-name {
     font-weight: 500;
     font-size: 16px;
@@ -200,7 +227,7 @@ h3 {
 
 .filter-name:focus,
 .filter-name:hover {
-    color: #ffffff;
+    color: var(--white-background);
     background: var(--accent-link-color);
     font-style: normal;
     text-align: center;
@@ -223,7 +250,7 @@ h3 {
 
 footer {
     background-color: #2F303A;
-    color: #FFFFFF;
+    color: var(--white-background);
     letter-spacing: 0.03em;
     border: 1px;
     font-style: normal;
